@@ -24,9 +24,9 @@ todoList = [
 ];
  */
 function deleteTodo(index) {
-    console.log("Before: " + todoList)
-    // YOUR CODE HERE
-    console.log("After:" + todoList)
+    console.log("Before: " + todoList);
+    todoList=todoList.slice(0,index).concat(todoList.slice(index+1));
+    console.log("After: " + todoList);
 }
 
 /**
